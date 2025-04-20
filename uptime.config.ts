@@ -10,9 +10,12 @@ const pageConfig = {
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
-  // group: {
-  //   '主站点': ['weblog'],
-  // },
+  group: {
+
+    '主站点': ['Blog'],
+    '提供的服务': ['Docker Mirror'],
+    '使用的服务': ['Github', 'Cloudflare', 'Google Search Console', 'Bing Webmasters Tools'],
+  },
 }
 
 const workerConfig = {
@@ -36,6 +39,79 @@ const workerConfig = {
         'User-Agent': 'Uptimeflare 114514',
       },
     },
+    {
+      id: 'Docker Mirror',
+      name: 'Docker Mirror',
+      method: 'GET',
+      target: 'https://docker.day1.pub',
+      tooltip: 'Docker 镜像平台',
+      statusPageLink: 'https://docker.day1.pub',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare 114514',
+      },
+    },
+    {
+      id: 'Github',
+      name: 'Github',
+      method: 'GET',
+      target: 'https://github.com',
+      tooltip: 'Github 代码托管平台',
+      statusPageLink: 'https://github.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare 114514',
+      },
+    },
+    {
+      id: 'Cloudflare',
+      name: 'Cloudflare',
+      method: 'GET',
+      target: 'https://cloudflare.com',
+      tooltip: 'Cloudflare 云解析平台',
+      statusPageLink: 'https://cloudflare.com',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare 114514',
+      },
+    },
+    {
+      id: 'Google Search Console',
+      name: 'Google Search Console',
+      method: 'GET',
+      target: 'https://search.google.com/search-console/',
+      tooltip: 'Google 搜索控制台',
+      statusPageLink: 'https://search.google.com/search-console/',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare 114514',
+      },
+    },
+
+    {
+      id: 'Bing Webmasters Tools',
+      name: 'Bing Webmasters Tools',
+      method: 'GET',
+      target: 'https://www.bing.com/webmasters/about',
+      tooltip: 'Bing 搜索控制台',
+      statusPageLink: 'https://www.bing.com/webmasters/about',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare 114514',
+      },
+    },
+
+
+
+
+
+
+
     // Example TCP Monitor
     // {
     //   id: 'test_tcp_monitor',
