@@ -26,7 +26,7 @@ const workerConfig = {
     {
       id: 'weblog',
       name: 'My Weblog',
-      method: 'POST',
+      method: 'GET',
       target: 'https://day1.pub',
       tooltip: 'Day 1 Blog',
       statusPageLink: 'https://day1.pub',
