@@ -10,9 +10,9 @@ const pageConfig = {
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
-  group: {
-    '主站点': ['weblog'],
-  },
+  // group: {
+  //   '主站点': ['weblog'],
+  // },
 }
 
 const workerConfig = {
@@ -24,8 +24,8 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
-      id: 'weblog',
-      name: 'My Weblog',
+      id: 'Blog',
+      name: 'Blog',
       method: 'GET',
       target: 'https://day1.pub',
       tooltip: 'Day 1 Blog',
