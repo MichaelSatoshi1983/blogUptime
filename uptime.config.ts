@@ -28,7 +28,7 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       id: 'Blog',
-      name: 'Blog',
+      name: 'Day 1 Blog',
       method: 'GET',
       target: 'https://day1.pub',
       tooltip: 'Day 1 Blog',
