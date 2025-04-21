@@ -65,7 +65,7 @@ export default function MonitorList({
                   }}
                 >
                   {group[groupName].length - countDownCount(state, group[groupName])}/
-                  {group[groupName].length} Operational
+                  {group[groupName].length} 正常
                 </Text>
               </div>
             </Accordion.Control>
