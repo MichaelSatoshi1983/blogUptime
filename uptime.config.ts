@@ -13,7 +13,7 @@ const pageConfig = {
   group: {
 
     '主站点': ['Blog'],
-    '提供的服务': ['Docker Mirror'],
+    '提供的服务': ['Docker Mirror', 'Pastebin'],
     '使用的服务': ['Github', 'Cloudflare', 'Google Search Console', 'Bing Webmasters Tools'],
   },
 }
@@ -46,6 +46,19 @@ const workerConfig = {
       target: 'https://docker.day1.pub',
       tooltip: 'Docker 镜像平台',
       statusPageLink: 'https://docker.day1.pub',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
+      },
+    },
+    {
+      id: 'Pastebin',
+      name: 'Pastebin 在线剪切板',
+      method: 'GET',
+      target: 'https://paste.day1.pub',
+      tooltip: '在线剪切板',
+      statusPageLink: 'https://paste.day1.pub',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
