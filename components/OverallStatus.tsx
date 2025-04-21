@@ -38,7 +38,7 @@ export default function OverallStatus({
   } else {
     statusString = `部分系统不可用 (${state.overallDown} 个系统处于错误状态，共 ${
       state.overallUp + state.overallDown
-    })个系统`
+    }个系统)`
   }
 
   const [openTime] = useState(Math.round(Date.now() / 1000))
