@@ -67,10 +67,10 @@ export default function OverallStatus({
         {statusString}
       </Title>
       <Title mt="sm" style={{ textAlign: 'center', color: '#70778c' }} order={5}>
-        Last updated on:{' '}
+        最后更新于:{' '}
         {`${new Date(state.lastUpdate * 1000).toLocaleString()} (${
           currentTime - state.lastUpdate
-        } sec ago)`}
+        } 秒前)`}
       </Title>
     </>
   )
