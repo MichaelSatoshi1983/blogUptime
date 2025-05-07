@@ -32,7 +32,7 @@ export default function Header() {
               variant="gradient"
               gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
-             Day 1 Status Monitor
+             undefined Blog Status Monitor
             </Text>
           </a>
         </div>
