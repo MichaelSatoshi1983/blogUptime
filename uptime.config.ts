@@ -1,10 +1,10 @@
 const pageConfig = {
   // Title for your status page
-  title: "Day 1 Blog 及其周边服务监控页面",
+  title: "undefined Blog 及其周边服务监控页面",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/MichaelSatoshi1983', label: 'GitHub' },
-    { link: 'https://day1.pub', label: 'Blog' },
+    { link: 'https://undefined.today', label: 'Blog' },
     { link: 'mailto:satoshi1983@zohomail.com', label: '给我发邮件', highlight: true },
   ],
   // [OPTIONAL] Group your monitors
@@ -28,11 +28,11 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       id: 'Blog',
-      name: 'Day 1 Blog',
+      name: 'undefined Blog',
       method: 'GET',
-      target: 'https://day1.pub',
-      tooltip: 'Day 1 Blog',
-      statusPageLink: 'https://day1.pub',
+      target: 'https://undefined.today',
+      tooltip: 'undefined Blog',
+      statusPageLink: 'https://undefined.today',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
@@ -43,9 +43,9 @@ const workerConfig = {
       id: 'Docker Mirror',
       name: 'Docker Mirror',
       method: 'GET',
-      target: 'https://docker.day1.pub',
+      target: 'https://docker.undefined.today/',
       tooltip: 'Docker 镜像平台',
-      statusPageLink: 'https://docker.day1.pub',
+      statusPageLink: 'https://docker.undefined.today/',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
@@ -56,9 +56,9 @@ const workerConfig = {
       id: 'Pastebin',
       name: 'Pastebin 在线剪切板',
       method: 'GET',
-      target: 'https://paste.day1.pub',
+      target: 'https://paste.undefined.today/',
       tooltip: '在线剪切板',
-      statusPageLink: 'https://paste.day1.pub',
+      statusPageLink: 'https://paste.undefined.today/',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
