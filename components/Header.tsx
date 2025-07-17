@@ -30,7 +30,7 @@ export default function Header() {
               span
               fw={700}
               variant="gradient"
-              gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              // gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
             >
              undefined Blog Status Monitor
             </Text>
