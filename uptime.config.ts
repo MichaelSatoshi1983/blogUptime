@@ -12,7 +12,7 @@ const pageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
 
-    '主站点': ['Blog'],
+    '主站点': ['Blog', 'LinuxCN'],
     '提供的服务': ['Docker Mirror', 'Pastebin'],
     '使用的服务': ['Github', 'Cloudflare', 'Google Search Console', 'Bing Webmasters Tools'],
   },
@@ -33,6 +33,19 @@ const workerConfig = {
       target: 'https://undefined.today',
       tooltip: 'undefined Blog',
       statusPageLink: 'https://undefined.today',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15',
+      },
+    },
+    {
+      id: 'LinuxCN',
+      name: '又一个 LinuxCN 镜像站点',
+      method: 'GET',
+      target: 'https://linuxcn.undefined.today/',
+      tooltip: 'LinuxCN 镜像站点',
+      statusPageLink: 'https://linuxcn.undefined.today/',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
