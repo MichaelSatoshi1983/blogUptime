@@ -10,6 +10,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <script defer src="https://pv.undefined.today/tracker.min.js" data-website-id="BlogStatus-tracker"></script>
       </body>
     </Html>
   )
